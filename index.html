@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="gu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5efe3">
+  <title>Friendship Government 2026 — United Friends Republic</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --paper: #f5efe3;
+      --ink: #18221e;
+      --green: #164d3c;
+      --green2: #226149;
+      --orange: #e97142;
+      --gold: #edc978;
+      --muted: #727a70;
+      --line: #dcd4c4;
+      --white: #fffdf8;
+      --shadow: 0 18px 50px #23372b12
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', 'Noto Sans Gujarati', sans-serif
+    }
+
+    button {
+      font: inherit;
+      color: inherit
+    }
+
+    .gu {
+      font-family: 'Noto Sans Gujarati', 'DM Sans', sans-serif
+    }
+
+    .wrap {
+      max-width: 1160px;
+      margin: auto;
+      padding: 0 28px
+    }
+
+    .topline {
+      height: 8px;
+      background: linear-gradient(90deg, var(--orange) 0 33.3%, #fffaf0 33.3% 66.6%, var(--green) 66.6%)
+    }
+
+    header {
+      padding: 22px 0 16px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .headrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .02em
+    }
+
+    .seal {
+      width: 42px;
+      height: 42px;
+      border: 1.5px solid var(--green);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-size: 21px
+    }
+
+    .brand small {
+      display: block;
+      font: 11px 'DM Mono', monospace;
+      letter-spacing: .13em;
+      color: var(--muted);
+      margin-top: 2px
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+      align-items: center
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    .nav a:hover {
+      color: var(--green)
+    }
+
+    .live {
+      font: 10px 'DM Mono', monospace;
+      color: var(--green);
+      letter-spacing: .12em
+    }
+
+    .live:before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: #4d9c63;
+      border-radius: 100%;
+      margin-right: 8px
+    }
+
+    .hero {
+      padding: 62px 28px 42px;
+      display: grid;
+      grid-template-columns: 1fr .82fr;
+      gap: 30px;
+      align-items: center
+    }
+
+    .eyebrow {
+      font: 11px 'DM Mono', monospace;
+      letter-spacing: .17em;
+      color: var(--orange);
+      text-transform: uppercase
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: .99;
+      letter-spacing: -.065em;
+      margin: 16px 0 18px;
+      max-width: 700px
+    }
+
+    .hero h1 span {
+      color: var(--green)
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #59635a;
+      margin: 0
+    }
+
+    .hero-actions {
+      margin-top: 27px;
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .primary {
+      border: 0;
+      background: var(--green);
+      color: white;
+      padding: 14px 19px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 0 8px 18px #164d3c24
+    }
+
+    .primary:hover {
+      background: var(--green2);
+      transform: translateY(-1px)
+    }
+
+    .hero-note {
+      font: 11px 'DM Mono', monospace;
+      color: var(--muted)
+    }
+
+    .seal-card {
+      background: var(--green);
+      color: #fffaf0;
+      padding: 27px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      min-height: 250px;
+      box-shadow: var(--shadow)
+    }
+
+    .seal-card:after {
+      content: '✳';
+      position: absolute;
+      right: -13px;
+      bottom: -87px;
+      font-size: 245px;
+      line-height: 1;
+      color: #ffffff0b
+    }
+
+    .seal-card .micro {
+      font: 10px 'DM Mono', monospace;
+      letter-spacing: .15em;
+      color: #dfc786
+    }
+
+    .seal-card h2 {
+      font-size: 25px;
+      letter-spacing: -.035em;
+      margin: 24px 0 9px
+    }
+
+    .seal-card .motto {
+      font-size: 19px;
+      margin: 0 0 25px
+    }
+
+    .stats {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid #ffffff35;
+      padding-top: 16px
+    }
+
+    .stats div {
+      flex: 1
+    }
+
+    .stats strong {
+      display: block;
+      font-size: 22px
+    }
+
+    .stats span {
+      font: 9px 'DM Mono', monospace;
+      letter-spacing: .1em;
+      color: #d3daca
+    }
+
+    .ticker {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 12px 28px;
+      font: 10px 'DM Mono', monospace;
+      letter-spacing: .1em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .ticker b {
+      color: var(--green);
+      font-weight: 500
+    }
+
+    .section {
+      padding: 56px 28px
+    }
+
+    .sectionhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 25px
+    }
+
+    .sectionhead h2 {
+      font-size: 34px;
+      letter-spacing: -.05em;
+      margin: 7px 0 0
+    }
+
+    .sectionhead p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 5px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 20px;
+      text-align: left;
+      border-radius: 7px;
+      cursor: pointer;
+      min-height: 192px;
+      position: relative;
+      transition: .2s;
+      box-shadow: 0 2px 8px #25362905
+    }
+
+    .card:hover,
+    .card[aria-pressed="true"] {
+      border-color: var(--green);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow)
+    }
+
+    .cardhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .num {
+      font: 10px 'DM Mono', monospace;
+      color: var(--orange);
+      letter-spacing: .08em
+    }
+
+    .icon {
+      height: 33px;
+      width: 33px;
+      border-radius: 50%;
+      background: #eaf0e8;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-size: 16px
+    }
+
+    .card h3 {
+      font-size: 21px;
+      letter-spacing: -.03em;
+      margin: 18px 0 4px
+    }
+
+    .role {
+      font: 10px 'DM Mono', monospace;
+      letter-spacing: .04em;
+      color: var(--green);
+      text-transform: uppercase
+    }
+
+    .teaser {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666e66;
+      margin: 11px 0 0
+    }
+
+    .card .open {
+      position: absolute;
+      right: 18px;
+      bottom: 17px;
+      font-size: 17px;
+      color: var(--green)
+    }
+
+    .profile {
+      display: none
+    }
+
+    .profile.show {
+      display: grid;
+      position: fixed;
+      z-index: 20;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(760px, calc(100vw - 36px));
+      max-height: calc(100vh - 36px);
+      grid-template-columns: .36fr 1fr;
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      overflow: auto;
+      box-shadow: 0 28px 90px #101a1680;
+      animation: pop .2s ease
+    }
+
+    @keyframes pop {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(.98)
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1)
+      }
+    }
+
+    .profile-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 19;
+      background: #111a1690;
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s
+    }
+
+    .profile-backdrop.show {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .profile-aside {
+      background: var(--green);
+      color: white;
+      padding: 29px
+    }
+
+    .profile-aside .big-num {
+      font: 11px 'DM Mono', monospace;
+      color: var(--gold);
+      letter-spacing: .12em
+    }
+
+    .profile-aside h3 {
+      font-size: 30px;
+      margin: 17px 0 4px;
+      letter-spacing: -.04em
+    }
+
+    .profile-aside .position {
+      font: 10px 'DM Mono', monospace;
+      color: #d4ddce;
+      line-height: 1.6
+    }
+
+    .rating {
+      margin-top: 30px;
+      border-top: 1px solid #ffffff30;
+      padding-top: 18px;
+      font: 10px 'DM Mono', monospace;
+      color: #d4ddce
+    }
+
+    .rating strong {
+      display: block;
+      color: white;
+      font-size: 17px;
+      margin-top: 5px
+    }
+
+    .profile-main {
+      padding: 28px 32px;
+      position: static
+    }
+
+    .close {
+      position: absolute;
+      right: 17px;
+      top: 14px;
+      z-index: 2;
+      border: 1px solid var(--line);
+      background: var(--white);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer
+    }
+
+    .detail {
+      margin: 0 0 23px
+    }
+
+    .detail:last-child {
+      margin-bottom: 0
+    }
+
+    .detail label {
+      display: block;
+      font: 10px 'DM Mono', monospace;
+      color: var(--orange);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 9px
+    }
+
+    .detail p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #37433b
+    }
+
+    .quote {
+      background: #f4f0e6;
+      border-left: 3px solid var(--gold);
+      padding: 13px 16px;
+      font-weight: 700 !important;
+      border-radius: 0 4px 4px 0
+    }
+
+    .warning {
+      color: #7c4d32 !important;
+      font-size: 14px !important
+    }
+
+    .declaration {
+      background: #e9e2d3;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 49px 0
+    }
+
+    .decl-grid {
+      display: grid;
+      grid-template-columns: .6fr 1fr;
+      gap: 40px;
+      align-items: center
+    }
+
+    .declaration h2 {
+      font-size: 32px;
+      letter-spacing: -.05em;
+      margin: 8px 0
+    }
+
+    .declaration blockquote {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      color: #3b473e
+    }
+
+    .declaration blockquote strong {
+      color: var(--green)
+    }
+
+    .constitution {
+      display: flex;
+      gap: 14px;
+      margin-top: 18px
+    }
+
+    .article {
+      border: 1px solid #cec5b2;
+      padding: 12px 13px;
+      flex: 1;
+      border-radius: 4px
+    }
+
+    .article b {
+      display: block;
+      font: 9px 'DM Mono', monospace;
+      color: var(--orange);
+      letter-spacing: .1em;
+      margin-bottom: 6px
+    }
+
+    .article span {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #576057
+    }
+
+    footer {
+      padding: 24px 0 30px;
+      color: var(--muted);
+      font: 10px 'DM Mono', monospace;
+      letter-spacing: .04em
+    }
+
+    .footrow {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px
+    }
+
+    .footrow strong {
+      color: var(--green)
+    }
+
+    @media(max-width:760px) {
+      .wrap {
+        padding: 0 18px
+      }
+
+      .headrow {
+        flex-wrap: wrap
+      }
+
+      .nav {
+        gap: 13px;
+        flex-wrap: wrap
+      }
+
+      .nav a {
+        font-size: 11px
+      }
+
+      .live {
+        display: none
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 42px 18px 32px;
+        gap: 24px
+      }
+
+      .hero h1 {
+        font-size: clamp(40px, 8vw, 52px)
+      }
+
+      .seal-card {
+        min-height: 210px
+      }
+
+      .section {
+        padding: 42px 18px
+      }
+
+      .ticker {
+        padding: 12px 18px
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .profile.show {
+        grid-template-columns: 1fr
+      }
+
+      .profile.show {
+        max-height: calc(100dvh - 36px)
+      }
+
+      .profile-aside {
+        padding: 22px
+      }
+
+      .profile-aside h3 {
+        margin: 9px 0 3px
+      }
+
+      .rating {
+        margin-top: 14px;
+        padding-top: 12px
+      }
+
+      .decl-grid {
+        grid-template-columns: 1fr;
+        gap: 15px
+      }
+
+      .sectionhead h2 {
+        font-size: 29px
+      }
+    }
+
+    @media(max-width:480px) {
+      .brand {
+        font-size: 12px
+      }
+
+      .brand small {
+        font-size: 9px
+      }
+
+      .seal {
+        width: 36px;
+        height: 36px
+      }
+
+      .hero h1 {
+        font-size: clamp(36px, 11vw, 44px)
+      }
+
+      .hero p {
+        font-size: 14px
+      }
+
+      .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px
+      }
+
+      .card {
+        padding: 16px 42px 40px 16px;
+        min-height: 0
+      }
+
+      .card h3 {
+        font-size: 18px;
+        margin-top: 14px
+      }
+
+      .teaser {
+        font-size: 12px
+      }
+
+      .role {
+        font-size: 9px
+      }
+
+      .card .open {
+        right: 13px;
+        bottom: 12px
+      }
+
+      .sectionhead {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .profile.show {
+        width: calc(100vw - 24px);
+        max-height: calc(100dvh - 24px)
+      }
+
+      .profile-aside {
+        padding: 17px
+      }
+
+      .profile-aside .big-num {
+        font-size: 9px
+      }
+
+      .profile-aside h3 {
+        font-size: 25px
+      }
+
+      .profile-main {
+        padding: 23px 17px
+      }
+
+      .detail {
+        margin-bottom: 17px
+      }
+
+      .detail p {
+        font-size: 14px
+      }
+
+      .constitution {
+        flex-direction: column
+      }
+
+      .footrow {
+        flex-direction: column
+      }
+    }
+
+      .welcome-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        display: grid;
+        place-items: center;
+        padding: 18px;
+        background: #101915a8;
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .25s, visibility .25s
+      }
+
+      .welcome-backdrop.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto
+      }
+
+      .welcome-card {
+        position: relative;
+        width: min(820px, 100%);
+        max-height: calc(100vh - 36px);
+        overflow: auto;
+        background: var(--white);
+        border: 1px solid #fff9;
+        border-radius: 10px;
+        box-shadow: 0 30px 100px #0007;
+        transform: translateY(10px) scale(.985);
+        transition: transform .25s
+      }
+
+      .welcome-backdrop.show .welcome-card {
+        transform: translateY(0) scale(1)
+      }
+
+      .welcome-photo {
+        display: block;
+        width: 100%;
+        max-height: min(62vh, 590px);
+        object-fit: cover;
+        background: #ded8c9
+      }
+
+      .welcome-caption {
+        padding: 17px 22px 19px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px
+      }
+
+      .welcome-caption h2 {
+        margin: 4px 0 0;
+        font-size: 23px;
+        letter-spacing: -.04em
+      }
+
+      .welcome-caption p {
+        margin: 4px 0 0;
+        font-size: 13px;
+        color: var(--muted)
+      }
+
+      .welcome-close {
+        flex: none;
+        border: 0;
+        background: var(--green);
+        color: white;
+        padding: 12px 17px;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer
+      }
+
+      .welcome-x {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        border: 0;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        background: #17211edb;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: grid;
+        place-items: center
+      }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *:before,
+      *:after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important
+      }
+    }
+
+    @media(max-width:480px) {
+      .brand {
+        font-size: 12px
+      }
+
+      .brand small {
+        font-size: 9px
+      }
+
+      .seal {
+        width: 36px;
+        height: 36px
+      }
+
+      .hero h1 {
+        font-size: clamp(36px, 11vw, 44px)
+      }
+
+      .hero p {
+        font-size: 14px
+      }
+
+      .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 9px
+      }
+
+      .card {
+        padding: 16px 42px 40px 16px;
+        min-height: 0
+      }
+
+      .card h3 {
+        font-size: 18px;
+        margin-top: 14px
+      }
+
+      .teaser {
+        font-size: 12px
+      }
+
+      .role {
+        font-size: 9px
+      }
+
+      .card .open {
+        right: 13px;
+        bottom: 12px
+      }
+
+      .sectionhead {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .profile.show {
+        width: calc(100vw - 24px);
+        max-height: calc(100dvh - 24px)
+      }
+
+      .profile-aside {
+        padding: 17px
+      }
+
+      .profile-aside .big-num {
+        font-size: 9px
+      }
+
+      .profile-aside h3 {
+        font-size: 25px
+      }
+
+      .profile-main {
+        padding: 23px 17px
+      }
+
+      .detail {
+        margin-bottom: 17px
+      }
+
+      .detail p {
+        font-size: 14px
+      }
+
+      .welcome-caption {
+        padding: 13px 14px;
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .welcome-caption h2 {
+        font-size: 20px
+      }
+
+      .welcome-close {
+        width: 100%
+      }
+
+      .welcome-photo {
+        max-height: 58vh
+      }
+
+      .constitution {
+        flex-direction: column
+      }
+
+      .footrow {
+        flex-direction: column
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap headrow">
+      <div class="brand">
+        <div class="seal">✳</div>
+        <div>UNITED FRIENDS REPUBLIC<small>FRIENDSHIP GOVERNMENT · EST. 2026</small></div>
+      </div>
+      <nav class="nav"><a href="#cabinet">The Cabinet</a><a href="#declaration">Declaration</a><span
+          class="live">SESSION IN PROGRESS</span></nav>
+    </div>
+  </header>
+  <div class="welcome-backdrop" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+    <div class="welcome-card"><button class="welcome-x" type="button" aria-label="Close photo popup">×</button>
+      <img class="welcome-photo" src="group-photo.jpeg" alt="Friendship Government group photo">
+      <div class="welcome-caption">
+        <div>
+          <div class="eyebrow">United Friends Republic · 2026</div>
+          <h2 id="welcome-title">The Cabinet is in session</h2>
+          <p class="gu">આપણા આખા ગ્રુપ તરફથી Friendship Governmentમાં તમારું સ્વાગત છે! 😄</p>
+        </div><button class="welcome-close" type="button">Enter the website&nbsp; ↗</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Official friendship gazette · Issue no. 09</div>
+        <h1>The Friendship<br><span>Government</span> 2026</h1>
+        <p class="gu">નવ મિત્રો, નવ ministries અને મોજ માટે બનેલી એકદમ fictional સરકાર. અહીં દરેકની પોતાની post છે — અને
+          દરેક fileમાં થોડું સત્ય, થોડો roast! 😂</p>
+        <div class="hero-actions"><button class="primary"
+            onclick="document.querySelector('#cabinet').scrollIntoView({behavior:'smooth'})">Meet the cabinet <span
+              aria-hidden="true">↘</span></button><span class="hero-note">NO WORK · ONLY VIBES</span></div>
+      </div>
+      <aside class="seal-card">
+        <div class="micro">✳ &nbsp; OFFICIAL GOVERNMENT SEAL &nbsp; ✳</div>
+        <h2>United Friends Republic</h2>
+        <p class="motto gu" style="color:white;">“મોજ ચાલુ રહેવી જોઈએ.” 😂</p>
+        <div class="stats">
+          <div><strong>09</strong><span>MINISTERS</span></div>
+          <div><strong>00</strong><span>REAL RULES</span></div>
+          <div><strong>∞</strong><span>BAKCHODI</span></div>
+        </div>
+      </aside>
+    </section>
+    <div class="wrap ticker"><span><b>GAZETTE 2026</b> &nbsp; · &nbsp; PUBLIC NOTICE</span><span>FICTIONAL GOVERNMENT ·
+        FRIENDSHIP FIRST</span><span>EST. FOR ENTERTAINMENT ONLY</span></div>
+    <section class="wrap section" id="cabinet">
+      <div class="sectionhead">
+        <div>
+          <div class="eyebrow">The Council of nine</div>
+          <h2>Meet the Cabinet</h2>
+        </div>
+        <p class="gu">કોઈ એક profile પર click કરો અને તેની secret file ખોલો. 🔐</p>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="profile" id="profile" aria-live="polite"></div>
+    </section>
+    <section class="declaration" id="declaration">
+      <div class="wrap decl-grid">
+        <div>
+          <div class="eyebrow">Friendship Government · 2026</div>
+          <h2>Government Declaration</h2>
+        </div>
+        <div>
+          <blockquote class="gu">અમે, <strong>United Friends Republic</strong>ના નવ સભ્યો, જાહેર કરીએ છીએ કે આ સરકાર
+            માત્ર <strong>મોજ, મિત્રતા અને harmless roast</strong> માટે છે. અહીં કોઈનું પદ કાયમી નથી, કોઈની મજાક દિલ પર
+            લેવાની નથી અને groupમાં હાસ્ય ચાલુ રહેવું જોઈએ. 😂</blockquote>
+          <div class="constitution">
+            <div class="article"><b>ARTICLE 01</b><span class="gu">મિત્રતા પહેલાં, બધી મસ્તી પછી.</span></div>
+            <div class="article"><b>ARTICLE 02</b><span class="gu">“5 મિનિટ”નો સમય સરકાર નક્કી નહીં કરે.</span></div>
+            <div class="article"><b>ARTICLE 03</b><span class="gu">બધી files fictional છે — હસીને વાંચવી.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footrow"><span><strong>UNITED FRIENDS REPUBLIC</strong> · FRIENDSHIP GOVERNMENT
+        2026</span><span>FICTIONAL · UNOFFICIAL · FULL OF FRIENDSHIP</span></div>
+  </footer>
+  <script>
+    const people = [
+      { name: 'Deep', role: 'Minister of “5 Minutes” & Social Destruction', icon: '⌛', teaser: '“5 મિનિટમાં આવું છું” — પછી collegeમાં જ દેખાતો નથી. 😂', habit: 'ગામમાં કોઈને ચોદિયું બનાવવાની વાત આવે તો Deep પાસે એની અલગ જ skill છે. દર વખતે કહે — “5 મિનિટમાં આવું છું”, પણ પછી collegeમાં જ દેખાતો નથી. 😂 અને દિવસ હોય કે રાત — ભાભી સાથે વાત કરવાનો તેનો official duty સમય ક્યારેય પૂરો થતો નથી.', dialogue: '“5 મિનિટમાં આવું છું.”', power: '5 minutes → Unknown amount of time', warning: 'Deepના “5 મિનિટ” પર વિશ્વાસ કરવો રાષ્ટ્રીય જોખમ છે.', rating: '5 min → 45+ min' },
+      {
+        name: 'Deven',
+        role: 'Minister of Education, Shayari & Public Abuse Affairs',
+        icon: '📚',
+        teaser: 'દિવસે Teacher, મિજાજે શાયર અને દિલથી મોટી દુનિયાનું નાનું બચ્ચું. 😂',
+        habit: 'આખું ગામ Devenની મજાક કરે, પણ Deven બધું ખુલ્લા દિલે સહન કરે. બહારથી Teacher, groupમાં “ચોદિયા ચોદિયા” બોલે અને વચ્ચે અચાનક શાયરી પણ સંભળાવી દે. મોટી દુનિયાનું નાનું બચ્ચું — બસ એને ચીડવવા માટે આખું ગામ હાજર! 😄',
+        dialogue: '“ચોદિયા ચોદિયા…” — અને પછી એક દિલને અડી જાય એવી શાયરી. 😄',
+        power: 'એક મિનિટમાં મજાક સહન કરવી અને બીજી જ મિનિટે શાયરીથી માહોલ બદલવો.',
+        warning: 'Devenને વધારે ચીડવશો તો lecture સાથે શાયરી પણ freeમાં મળી શકે. 😂',
+        rating: 'Teacher · Shayari mode · નાનું બચ્ચું'
+      }, { name: 'Om', role: 'Supreme Boss of the Friendship Government', icon: '👑', teaser: 'Bossનો પણ boss. Roast માટે એક મિનિટ, અને પછી.. પિક્કી ના! 😂', habit: 'Omની favourite ગાળ “પિક્કી ના” છે. Bossનો પણ Boss. કોઈને માત્ર એક મિનિટમાં એવી રીતે roast કરી નાખે કે સામેની વ્યક્તિની આખી ચડ્ડી ઉતરી જાય. 😂 અને સંડાસ તેના માટે માત્ર bathroom નથી — એ તો લગભગ જન્નત છે.', dialogue: '“પિક્કી ના!”', power: '60 secondsમાં કોઈની આખી ચડ્ડી ઉતારી દેવી.', warning: 'Omની સામે roast battle શરૂ કરતા પહેલાં પોતાની તૈયારી ચેક કરવી.', rating: 'Boss level · Supreme' },
+      { name: 'Sujal', role: 'Minister of Unofficial Nicknames', icon: '🕶️', teaser: 'Sujal નું નામ Sujal છે, પણ groupની attendanceમાં એ “ભીંડો” તરીકે જ ઓળખાય છે. 😂', habit: 'આખા ગામને ચોદિયું સમજે છે, પણ પોતે એકદમ સીધો માણસ છે. Groupના બધાએ મળીને એને “ભીંડો” નામ આપ્યું છે — હવે નામ બદલવાની અરજી પણ groupની મંજૂરી વગર પાસ નહીં થાય. 😂', dialogue: '“મારું નામ Sujal છે હો… ભીંડો નહીં!”', power: 'કોઈ પણ groupમાં જાય, પાંચ મિનિટમાં nickname કાયમી થઈ જાય.', warning: 'Sujalને “ભીંડો” બોલાવતાં પહેલાં આજુબાજુના બધા મિત્રોનો સહકાર તપાસી લેવો. 😄', rating: 'Nickname status · Permanent' },
+      { name: 'Dhruv', role: 'Minister of Peace & Zero Uplifting', icon: '☀️', teaser: 'Groupનો સૌથી મોજીલો; “ઉપાદી” શું છે એનો ખ્યાલ જ નથી. 😄', habit: 'અમારા groupનો સૌથી મોજીલો માણસ. કોઈ દિવસ ઉપાદી કરતો જ નથી — એને “ઉપાદી” એટલે શું, તેની પણ ખાસ ખબર નથી. તેનો પાક્કો મિત્ર Samarth છે. 😄', dialogue: '“ઉપાદી એટલે શું?”', power: 'Zero tension, full મોજ — દરેક સમયે.', warning: 'Dhruvને serious કામ આપતાં પહેલાં તેનો mood નહીં, તેની definition પૂછજો.', rating: 'Mood · Always Mojilo' },
+      { name: 'Mahi', role: 'Minister of Video Calls & Group Attendance', icon: '📱', teaser: 'Video call આવે એટલે groupના બધા લોકો એકસાથે ઉપડે. 😂', habit: 'અમારા groupની પહેલી છોકરી, જે Suratમાં પોતાના ઘરે રહે છે. ગમે ત્યારે groupમાં video call કરે એટલે બધા ઉપાડે. એક વાર groupમાં કહ્યું કે “lecture નથી ભરવો” — એટલે બધા લોકોએ તેનું માન રાખ્યું. 😂', dialogue: '“Lecture નથી ભરવો.”', power: 'એક video call થી આખા group ને હાજર કરાવી દે.', warning: 'Mahi નો video call આવે તો group માં હાજરી આપવી જ પડે.', rating: 'Attendance power · 9/9' },
+      { name: 'Jinal', role: 'Minister of Treasury & Royal Speech', icon: '💎', teaser: 'આટલી પૈસાવાળી કે Ambani પણ second number પર. 😄', habit: 'અમારા groupની સૌથી પૈસાવાળી છોકરી. આટલો પૈસો કે Ambaniને પણ બીજા number પર રાખે! અને એ કંઈક બોલે એટલે એવું લાગે કે મોઢા માંથી દાંત કાઢીને બોલે છે. 😄', dialogue: '“Ambani? બીજો નંબર.”', power: 'Treasury એવી કે Ambani પણ list માં પાછળ.', warning: 'Jinalનું budget પૂછતાં પહેલાં પોતાનું bank balance છુપાવી દેજો.', rating: 'Treasury · Ambani+ tier' },
+      { name: 'Pari', role: 'Minister of Crush Affairs & Headaches', icon: '💘', teaser: 'દુનિયાભરના છોકરાઓની crush; વાતોનો તો કોઈ અંત જ નહીં. 😂', habit: 'Pari એવી છોકરી છે જે દુનિયામાં પહેલા નંબર પર આવતી છોકરાઓની crush છે. શરીર કંઈ નથી, પણ વાતો સમાતી જ નથી. અને ઘણી વાર એને માથામાં બહુ દુખાવો થાય છે. 😂', dialogue: '“એક વાત કહું? પછી બીજી પણ છે…”', power: 'વાતોની unlimited supply — કોઈ અંત નહીં.', warning: 'Pari સાથે “ટૂંકમાં કહેજે” કહેવું સમયનો ખોટો અંદાજ છે.', rating: 'Crush status · Worldwide' },
+      { name: 'Shruti', role: 'Minister of Famous Connections', icon: '✨', teaser: 'Groupના સૌથી famous Devenનો love — અને Mihirkumarની દીકરી. 😄', habit: 'અમારા groupના સૌથી famous person Devenનો love. અને goldની દુનિયાના બાદશાહ Mihirkumarની છોકરી. 😄', dialogue: '“હા, Devenને ઓળખું છું.”', power: 'Deven સાથેનું connection અને gold-worldનું royal status.', warning: 'Shruti આવે એટલે famous-person protocol લાગુ પડે. 😄', rating: 'Fame · Gold standard' }
+    ];
+    const grid = document.getElementById('grid'), panel = document.getElementById('profile');
+    const backdrop = document.createElement('div'); backdrop.className = 'profile-backdrop'; backdrop.setAttribute('aria-hidden', 'true'); document.body.appendChild(backdrop);
+    const esc = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    people.forEach((p, i) => { const b = document.createElement('button'); b.className = 'card'; b.type = 'button'; b.setAttribute('aria-pressed', 'false'); b.innerHTML = `<div class="cardhead"><span class="num">MINISTRY ${String(i + 1).padStart(2, '0')}</span><span class="icon">${p.icon}</span></div><h3>${p.name}</h3><div class="role">${p.role}</div><p class="teaser gu">${p.teaser}</p><span class="open" aria-hidden="true">↗</span>`; b.addEventListener('click', () => openProfile(i, b)); grid.appendChild(b) });
+    function closeProfile() { panel.classList.remove('show'); backdrop.classList.remove('show'); document.body.style.overflow = ''; document.querySelectorAll('.card').forEach(c => c.setAttribute('aria-pressed', 'false')) }
+    function openProfile(i, button) { const p = people[i]; document.querySelectorAll('.card').forEach(c => c.setAttribute('aria-pressed', 'false')); button.setAttribute('aria-pressed', 'true'); panel.innerHTML = `<aside class="profile-aside"><div class="big-num">OFFICIAL PERSONNEL FILE · ${String(i + 1).padStart(2, '0')}</div><h3>${p.name}</h3><div class="position">${p.role.toUpperCase()}</div><div class="rating">GOVERNMENT RATING<strong>${p.rating}</strong></div></aside><div class="profile-main"><button class="close" aria-label="Close profile" title="Close">×</button><div class="detail"><label>Known Habit · Classified</label><p class="gu">${p.habit}</p></div><div class="detail"><label>Famous Dialogue</label><p class="quote gu">${p.dialogue}</p></div><div class="detail"><label>Special Power</label><p class="gu">${p.power}</p></div><div class="detail"><label>Government Warning</label><p class="warning gu">${p.warning}</p></div></div>`; panel.classList.add('show'); backdrop.classList.add('show'); document.body.style.overflow = 'hidden'; panel.querySelector('.close').addEventListener('click', closeProfile) }
+    backdrop.addEventListener('click', closeProfile); document.addEventListener('keydown', e => { if (e.key === 'Escape' && panel.classList.contains('show')) closeProfile() });
+    
+    const welcome = document.getElementById('welcome'); function closeWelcome() { welcome.classList.remove('show'); document.body.style.overflow = '' } welcome.classList.add('show'); document.body.style.overflow = 'hidden'; welcome.querySelectorAll('.welcome-x,.welcome-close').forEach(b => b.addEventListener('click', closeWelcome)); welcome.addEventListener('click', e => { if (e.target === welcome) closeWelcome() }); document.addEventListener('keydown', e => { if (e.key === 'Escape' && welcome.classList.contains('show')) closeWelcome() });
+  </script>
+</body>
+
+</html>
